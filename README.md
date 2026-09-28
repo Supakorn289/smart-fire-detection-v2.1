@@ -148,6 +148,15 @@ Detailed instructions:
 - [`docs/COMMISSIONING.md`](docs/COMMISSIONING.md)
 - [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md)
 
+## ภาษาไทย / Thai Documentation
+
+- [เริ่มต้นติดตั้ง](docs/START_HERE_TH.md)
+- [ติดตั้ง Debian ภาษาไทย](docs/INSTALLATION_TH.md)
+- [Commissioning 0→100 ภาษาไทย](docs/COMMISSIONING_TH.md)
+- [Troubleshooting ภาษาไทย](docs/TROUBLESHOOTING_TH.md)
+- [Portfolio Guide ภาษาไทย](docs/PORTFOLIO_TH.md)
+- [Research Package ภาษาไทย](research/README_TH.md)
+
 ## AI Model Contract
 
 Runtime artifact:
