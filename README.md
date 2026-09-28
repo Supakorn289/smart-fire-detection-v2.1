@@ -291,7 +291,13 @@ This project is a research/engineering detection system. It is not a replacement
 
 ## License
 
-This repository uses Ultralytics components. Before publishing the final repository license, read [`LICENSE-DECISION.md`](LICENSE-DECISION.md). If the project is distributed under the open-source Ultralytics path, use an AGPL-3.0-compatible repository license unless another applicable Ultralytics license covers the project.
+Smart Fire Detection v2 is distributed under the
+GNU Affero General Public License v3.0 (AGPL-3.0).
+
+See:
+
+- [`LICENSE`](LICENSE)
+- [`LICENSING.md`](LICENSING.md)
 
 ## Citation
 
