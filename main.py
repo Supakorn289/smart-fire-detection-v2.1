@@ -788,7 +788,7 @@ class AlertDeduplicator:
                         event,
                         now_mono,
                         (
-                            "duplicate-object "
+                            "duplicate object "
                             f"id="
                             f"{detection_object_id}"
                         ),
@@ -832,7 +832,7 @@ class AlertDeduplicator:
                         event,
                         now_mono,
                         (
-                            "duplicate-legacy "
+                            "duplicate legacy "
                             f"IoU={iou:.3f}"
                         ),
                     )

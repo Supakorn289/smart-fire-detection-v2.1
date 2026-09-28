@@ -26,9 +26,19 @@ IMPORTANT:
 """
 
 import numpy as np
+import pytest
 
 import config
 import detection
+
+
+@pytest.fixture(autouse=True)
+def _stub_runtime_bearing(monkeypatch):
+    monkeypatch.setattr(
+        detection,
+        "runtime_pixel_to_bearing",
+        lambda *args, **kwargs: 45.0,
+    )
 
 
 # ============================================================

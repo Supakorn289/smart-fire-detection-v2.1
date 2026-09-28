@@ -34,11 +34,28 @@ Scope:
 from types import SimpleNamespace
 
 import numpy as np
+import pytest
 
 import config
 import main as runtime
 
 from detection import Detection
+
+
+class _FakeRuntimeRotation:
+    resolved_path = "TEST_ONLY_PRESET_ROTATION"
+
+    def reload_if_changed(self):
+        return False
+
+
+@pytest.fixture(autouse=True)
+def _stub_runtime_rotation(monkeypatch):
+    monkeypatch.setattr(
+        runtime,
+        "get_runtime_preset_rotation",
+        lambda: _FakeRuntimeRotation(),
+    )
 
 
 # ============================================================
@@ -207,6 +224,7 @@ class FakeDetector:
         self,
         frame,
         preset,
+        **kwargs,
     ):
         self.calls.append(
             {

@@ -102,3 +102,6 @@ models/**/archive/
 
 # Generated runtime detection reports
 static/detection_runs/
+
+# Local test environment
+.venv-test/
